@@ -2,6 +2,9 @@
 
 return [
 
+
+    'languages' => ['en', 'mr'], // Add the languages you want
+
     /*
     |--------------------------------------------------------------------------
     | Application Name

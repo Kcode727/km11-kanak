@@ -1,12 +1,7 @@
-<!-- Theme Toggle Component -->
-<div x-data="{ darkMode: false }" x-init="
-    darkMode = localStorage.getItem('theme') === 'dark';
-    document.documentElement.classList.toggle('dark', darkMode);
-">
+<div x-data="themeToggle()" x-init="init()" class="theme-toggle">
     <button 
-        @click="darkMode = !darkMode; 
-                document.documentElement.classList.toggle('dark', darkMode);
-                localStorage.setItem('theme', darkMode ? 'dark' : 'light');"
+        id="theme-toggle" 
+        @click="toggleTheme()"
         class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
     >
         <!-- Sun Icon (for light mode) -->
@@ -20,3 +15,21 @@
         </svg>
     </button>
 </div>
+
+<script>
+    function themeToggle() {
+        return {
+            darkMode: false,
+            init() {
+                this.darkMode = localStorage.getItem('theme') === 'dark';
+                document.documentElement.classList.toggle('dark', this.darkMode);
+            },
+            toggleTheme() {
+                this.darkMode = !this.darkMode;
+                document.documentElement.classList.toggle('dark', this.darkMode);
+                localStorage.setItem('theme', this.darkMode ? 'dark' : 'light');
+                console.log('Dark mode:', this.darkMode); // Debugging line
+            }
+        }
+    }
+</script>

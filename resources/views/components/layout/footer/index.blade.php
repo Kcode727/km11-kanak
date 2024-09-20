@@ -1,11 +1,11 @@
-<footer class="relative bottom-0 dark:bg-black bg-gradient-to-r from-blue-200 via-purple-300 to-pink-200 dark:text-white text-black">
+<footer class="relative text-xl bottom-0 dark:bg-black bg-gradient-to-r from-blue-200 via-purple-300 to-pink-200 dark:text-white text-black">
         <div class="container mx-auto px-2">
             <div class="flex justify-between">
                 <div>
                 <h2 class="py-2 mx-20">Quick Links</h2><hr class="border-1 border-black dark:border-white">
                 <ul class="flex">
                     <li class="my-2 mx-4"><a href="/">HOME</a></li>
-                    <li class="my-2 mx-4"><a href="#">ABOUT</a></li>
+                    <li class="my-2 mx-4"><a href="/about">ABOUT</a></li>
                     <li class="my-2 mx-4"><a href="/contact">CONTACT</a></li>
                 </ul>
                 </div>
@@ -44,7 +44,4 @@
             </div>
         </div>
         <p class="text-center">© 2024 Kanak Meshram. All rights reserved.</p>
-        <div class="container">
-            
-        </div>
     </footer>

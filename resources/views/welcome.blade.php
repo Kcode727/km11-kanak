@@ -11,19 +11,20 @@
   <div class="flex flex-col items-center mt-5">
     <div class="mb-4">
       <!-- Light Mode Image -->
-      <img x-show="!darkMode" src="/images/logo-d.jpeg" alt="Logo" class="w-72 h-72 rounded shadow-lg">
+      <img x-show="!darkMode" src="/images/logo-d.jpeg" alt="Logo" class="w-96 h-96 rounded shadow-lg">
 
       <!-- Dark Mode Image -->
-      <img x-show="darkMode" src="/images/logo.jpeg" alt="Logo" class="w-72 h-72 rounded shadow-lg">
+      <img x-show="darkMode" src="/images/logo.jpeg" alt="Logo" class="w-80 h-80 rounded shadow-lg">
     </div>
     
     <div class="text-center">
-      <h1 class="text-4xl font-bold my-4">Hi There! I'm xyz</h1>
-      <p class="text-lg mt-2 mb-6">
+      <h1 class="text-5xl font-bold my-4">Hi There! I'm Kanak Meshram</h1>
+      <p class="text-3xl mt-2 mb-6">
         I love bringing ideas to life through interactive websites.<br>
-        I strive to infuse every project with originality and a unique perspective.<br>Thank you for visiting, and I'm excited to share my creative journey with you!
+        I strive to infuse every project with originality and a unique perspective.<br>
+        Thank you for visiting, and I'm excited to share my creative journey with you!
       </p>
-      <a href="#" class="py-2 px-6 bg-black text-white rounded shadow-lg hover:bg-purple-700 transition-colors duration-300">
+      <a href="/about" class="py-2 px-6 text-xl bg-black text-white rounded shadow-lg hover:bg-purple-700 transition-colors duration-300">
         ABOUT ME
       </a>
     </div>

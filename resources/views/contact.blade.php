@@ -16,11 +16,9 @@
                 <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-6">Let's Connect!</h2>
 
                 <p class="text-lg text-gray-700 dark:text-gray-300 mb-8">
-                I’d love to hear from you! Whether you have questions, feedback, 
+                I'd love to hear from you! Whether you have questions, feedback, 
                 or just want to chat, feel free to reach out. Your thoughts and ideas are always welcome!
                 </p>
-                
-                <!-- Contact Form -->
                 <form action="{{ route('contact.submit') }}" method="POST" class="space-y-6">
                     @csrf
 
