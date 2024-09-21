@@ -17,18 +17,34 @@
 </div>
 
 <script>
-    function toggleTheme() {
-    // Toggle the dark mode boolean value
-    this.darkMode = !this.darkMode;
+    function themeToggle() {
+        return {
+            darkMode: false,
 
-    // Immediately apply or remove the 'dark' class to/from the <html> element
-    document.documentElement.classList.toggle('dark', this.darkMode);
+            init() {
+                // Retrieve the user's theme preference from local storage
+                const storedTheme = localStorage.getItem('theme');
+                if (storedTheme) {
+                    this.darkMode = storedTheme === 'dark';
+                } else {
+                    // Optionally, detect the system's theme preference (light/dark)
+                    this.darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                }
 
-    // Debugging: Check if the 'dark' class is added/removed
-    console.log('Dark mode toggled:', this.darkMode, 'HTML class list:', document.documentElement.classList);
+                // Apply the dark class if dark mode is true
+                document.documentElement.classList.toggle('dark', this.darkMode);
+            },
 
-    // Save the user's theme preference in local storage
-    localStorage.setItem('theme', this.darkMode ? 'dark' : 'light');
-}
+            toggleTheme() {
+                // Toggle the dark mode boolean value
+                this.darkMode = !this.darkMode;
 
+                // Immediately apply or remove the 'dark' class to/from the <html> element
+                document.documentElement.classList.toggle('dark', this.darkMode);
+
+                // Save the user's theme preference in local storage
+                localStorage.setItem('theme', this.darkMode ? 'dark' : 'light');
+            }
+        };
+    }
 </script>

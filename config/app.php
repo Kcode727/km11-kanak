@@ -3,7 +3,7 @@
 return [
 
 
-    'languages' => ['en', 'mr'], // Add the languages you want
+    'languages' => ['English', 'मराठी'], // Add the languages you want
 
     /*
     |--------------------------------------------------------------------------

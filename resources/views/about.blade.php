@@ -3,57 +3,46 @@
         <div class="swiper-wrapper">
             <!-- Slide 1: About Me (Blue Shade) -->
             <div class="swiper-slide">
-                <div class="flex flex-col items-center justify-center h-screen bg-gray-100">
-                    <h1 class="text-4xl font-bold text-gray-800">About Me</h1>
-                    <p class="mt-4 text-2xl text-gray-600 max-w-3xl text-center">
-                    Welcome to my creative corner! I'm passionate about bringing 
-                    ideas to life through interactive websites that engage and inspire.
-                    Each project I take on is a unique adventure, driven by a commitment 
-                    to originality and a fresh perspective.<br><br>
-                    With a background in design and development, I thrive on the challenge
-                    of blending aesthetics with functionality, ensuring that every element 
-                    not only looks good but also enhances the user experience. My goal is 
-                    to create digital spaces that resonate with visitors, fostering connections 
-                    and telling compelling stories.<br><br>
-                    Thank you for taking the time to visit! I'm excited to share my creative 
-                    journey with you, exploring the endless possibilities of the digital world.
-                    Let's embark on this adventure together, where innovation meets imagination!
+                <div class="flex flex-col items-center justify-center h-screen bg-gray-100 dark:bg-gray-700">
+                    <h1 class="text-4xl font-bold text-gray-800 dark:text-white">{{ __('About Me')}}</h1>
+                    <p class="mt-4 text-2xl text-gray-600 max-w-3xl text-center dark:text-gray-400">
+                    {{ __('Welcome to my creative corner! I am passionate about bringing ideas to life through interactive websites that engage and inspire.Each project I take on is a unique adventure, driven by a commitment to originality and a fresh perspective.')}}<br><br>
+                    {{ __('With a background in design and development, I thrive on the challenge of blending aesthetics with functionality, ensuring that every element not only looks good but also enhances the user experience. My goal is to create digital spaces that resonate with visitors, fostering connections and telling compelling stories.')}}<br><br>
+                    {{ __('Thank you for taking the time to visit! I am excited to share my creative journey with you, exploring the endless possibilities of the digital world.Let us embark on this adventure together, where innovation meets imagination!')}}
                     </p>
                 </div>
             </div>
 
             <!-- Slide 2: Skills (Purple Shade) -->
             <div class="swiper-slide">
-                <div class="flex flex-col items-center justify-center h-screen bg-gray-200">
-                    <h1 class="text-5xl font-bold text-gray-800">Education</h1>
-                    <p class="mt-4 text-3xl text-gray-600 max-w-3xl text-center">
-                    I'm currently a student of Ramdeobaba University (formerly Ramdeobaba
-                    College of Engineering and Management), Nagpur, where I am pursuing 
-                    a degree in Artificial Intelligence and Machine Learning (AIML).<br>
-                    To know more about Ramdeobaba University 
-                    <a href="https://www.rknec.edu/" class="text-blue-700"> click here.</a>
+                <div class="flex flex-col items-center justify-center h-screen bg-gray-200 dark:bg-gray-700">
+                    <h1 class="text-5xl font-bold text-gray-800 dark:text-white">{{ __('Education')}}</h1>
+                    <p class="mt-4 text-3xl text-gray-600 max-w-3xl text-center dark:text-gray-400">
+                    {{ __('I am currently a student of Ramdeobaba University (formerly Ramdeobaba College of Engineering and Management), Nagpur, where I am pursuing a degree in Artificial Intelligence and Machine Learning (AIML).')}}<br>
+                    {{ __('To know more about Ramdeobaba University')}}
+                    <a href="https://www.rknec.edu/" class="text-blue-700 dark:text-blue-300"> {{ __('click here.')}}</a>
                     </p><br><br>
-                    <h1 class="text-5xl font-bold text-gray-800">Skills</h1>
-                    <ul class="mt-4 text-3xl text-gray-600 max-w-3xl text-center">
-                        <li>Proficient in: JavaScript, Python, Java</li>
-                        <li>Web development skills: HTML, CSS, React</li>
-                        <li>Collaborative mindset</li>
-                        <li>Envisioning original ideas and concepts</li>
-                        <li>Currently learning laravel framework</li>
+                    <h1 class="text-5xl font-bold text-gray-800 dark:text-white">{{ __('Skills')}}</h1>
+                    <ul class="mt-4 text-3xl text-gray-600 max-w-3xl text-center dark:text-gray-400">
+                        <li>{{ __('Proficient in: JavaScript, Python, Java')}}</li>
+                        <li>{{ __('Web development skills: HTML, CSS, React')}}</li>
+                        <li>{{ __('Collaborative mindset')}}</li>
+                        <li>{{ __('Envisioning original ideas and concepts')}}</li>
+                        <li>{{ __('Currently learning laravel framework')}}</li>
                     </ul>
                 </div>
             </div>
 
             <!-- Slide 3: Experience (Pink Shade) -->
             <div class="swiper-slide">
-                <div class="flex flex-col items-center justify-center h-screen bg-gray-300">
-                    <h1 class="text-5xl font-bold text-gray-800">Experiences</h1>
-                    <ul class="mt-4 text-3xl text-gray-600 max-w-4xl text-center">
-                        <li>Took part in Robothon an event by Robotics and Aviation Club RBU</li>
-                        <li>Achieved 3rd place in Marketing Masters, a competition at event Gyansarovar held at RBU  </li>
-                        <li>Attended DevFest 2023 held at IIM Nagpur</li>
-                        <li>Qualified for round 2 of Global Hyperloop Competition 2023 held at IIT Madras</li>
-                        <li>Qualified for round 2 of Smart India Hackathon (SIH) 2024</li>
+                <div class="flex flex-col items-center justify-center h-screen bg-gray-300 dark:bg-gray-700">
+                    <h1 class="text-5xl font-bold text-gray-800 dark:text-white">{{ __('Experiences')}}</h1>
+                    <ul class="mt-4 text-3xl text-gray-600 max-w-4xl text-center dark:text-gray-400">
+                        <li>{{ __('Took part in Robothon an event by Robotics and Aviation Club RBU')}}</li>
+                        <li>{{ __('Achieved 3rd place in Marketing Masters, a competition at event Gyansarovar held at RBU')}}  </li>
+                        <li>{{ __('Attended DevFest 2023 held at IIM Nagpur')}}</li>
+                        <li>{{ __('Qualified for round 2 of Global Hyperloop Competition 2023 held at IIT Madras')}}</li>
+                        <li>{{ __('Qualified for round 2 of Smart India Hackathon (SIH) 2024')}}</li>
                     </ul>
                 </div>
             </div>

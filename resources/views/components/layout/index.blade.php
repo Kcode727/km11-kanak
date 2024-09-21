@@ -10,6 +10,7 @@
     <title>{{$title}}</title>
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
 <div>

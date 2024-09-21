@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LanguageController;
 
-Route::post('/switch-language', [LanguageController::class, 'switchLanguage'])->name('language.switch');
+Route::post('/language.switch', LanguageController::class)->name('language.switch');
 
 Route::get('/', function () {
     return view('welcome');
