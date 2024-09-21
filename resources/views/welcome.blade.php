@@ -2,11 +2,8 @@
 <x-slot:title>Home</x-slot>
 
 <!-- Main Content -->
-<div class="border-b-2 dark:border-white border-black flex-1 p-10 dark:bg-black dark:text-white min-h-screen bg-gradient-to-r from-blue-200 via-purple-300 to-pink-200 text-black">
-  <!-- Moving Bubbles -->
-  <div class="absolute inset-0 z-10 overflow-hidden pointer-events-none">
-    <div id="bubbles"></div>
-  </div>
+<div class="border-b-2 dark:border-white border-black flex-1 p-10 bg-white dark:bg-black">
+  
 
   <div class="flex flex-col items-center mt-5">
     <div class="mb-4">
@@ -14,7 +11,7 @@
       <img x-show="!darkMode" src="/images/logo-d.jpeg" alt="Logo" class="w-96 h-96 rounded shadow-lg">
 
       <!-- Dark Mode Image -->
-      <img x-show="darkMode" src="/images/logo.jpeg" alt="Logo" class="w-80 h-80 rounded shadow-lg">
+      <img x-show="darkMode" src="/images/logo.jpeg" alt="Logo" class="w-96 h-96 rounded shadow-lg">
     </div>
     
     <div class="text-center">

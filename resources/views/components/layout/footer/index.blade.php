@@ -1,4 +1,4 @@
-<footer class="relative text-xl bottom-0 dark:bg-black bg-gradient-to-r from-blue-200 via-purple-300 to-pink-200 dark:text-white text-black">
+<footer class="relative text-xl bottom-0 dark:bg-black bg-white dark:text-white text-black">
         <div class="container mx-auto px-2">
             <div class="flex justify-between">
                 <div>
@@ -15,28 +15,28 @@
                     <li class="my-2"><a href="#" target="_blank">
                         <div>
                         <!-- Light Mode Image -->
-                        <img x-show="!darkMode" src="/images/linkedin.jpg" alt="Linkedin" class="w-6 h-6 rounded">
+                        <img x-show="!darkMode" src="/images/linkedin.jpg" alt="Linkedin" class="w-8 h-8 rounded">
 
                         <!-- Dark Mode Image -->
-                        <img x-show="darkMode" src="/images/linkedin-l.jpg" alt="Linkedin" class="w-6 h-6 rounded">
+                        <img x-show="darkMode" src="/images/linkedin-l.jpg" alt="Linkedin" class="w-8 h-8 rounded">
                         </div>
                     </a></li>
                     <li class="my-2"><a href="#" target="_blank">
                         <div>
                         <!-- Light Mode Image -->
-                        <img x-show="!darkMode" src="/images/insta.jpg" alt="Instagram" class="w-6 h-6 rounded">
+                        <img x-show="!darkMode" src="/images/insta.jpg" alt="Instagram" class="w-8 h-8 rounded">
 
                         <!-- Dark Mode Image -->
-                        <img x-show="darkMode" src="/images/insta-l.jpg" alt="Instagram" class="w-6 h-6 rounded">
+                        <img x-show="darkMode" src="/images/insta-l.jpg" alt="Instagram" class="w-8 h-8 rounded">
                         </div>
                     </a></li>
                     <li class="my-2"><a href="#" target="_blank">
                         <div>
                         <!-- Light Mode Image -->
-                        <img x-show="!darkMode" src="/images/github.jpg" alt="Github" class="w-6 h-6 rounded">
+                        <img x-show="!darkMode" src="/images/github.jpg" alt="Github" class="w-8 h-8 rounded">
 
                         <!-- Dark Mode Image -->
-                        <img x-show="darkMode" src="/images/github-l.jpg" alt="Github" class="w-6 h-6 rounded">
+                        <img x-show="darkMode" src="/images/github-l.jpg" alt="Github" class="w-8 h-8 rounded">
                         </div>
                     </a></li>
                     </ul>

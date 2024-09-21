@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  x-data="{ darkMode: false }" x-init="
-    darkMode = localStorage.getItem('theme') === 'dark';
-    if (darkMode) document.documentElement.classList.add('dark');">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" x-data="{darkMode: $persist(false)}" :class="{'dark': darkMode === true }">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-<div class="dark">
+<div>
 <x-layout.header />
 
 {{ $slot }}

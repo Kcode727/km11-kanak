@@ -3,7 +3,7 @@
         <div class="swiper-wrapper">
             <!-- Slide 1: About Me (Blue Shade) -->
             <div class="swiper-slide">
-                <div class="flex flex-col items-center justify-center h-screen bg-blue-200">
+                <div class="flex flex-col items-center justify-center h-screen bg-gray-100">
                     <h1 class="text-4xl font-bold text-gray-800">About Me</h1>
                     <p class="mt-4 text-2xl text-gray-600 max-w-3xl text-center">
                     Welcome to my creative corner! I'm passionate about bringing 
@@ -24,7 +24,7 @@
 
             <!-- Slide 2: Skills (Purple Shade) -->
             <div class="swiper-slide">
-                <div class="flex flex-col items-center justify-center h-screen bg-purple-300">
+                <div class="flex flex-col items-center justify-center h-screen bg-gray-200">
                     <h1 class="text-5xl font-bold text-gray-800">Education</h1>
                     <p class="mt-4 text-3xl text-gray-600 max-w-3xl text-center">
                     I'm currently a student of Ramdeobaba University (formerly Ramdeobaba
@@ -46,7 +46,7 @@
 
             <!-- Slide 3: Experience (Pink Shade) -->
             <div class="swiper-slide">
-                <div class="flex flex-col items-center justify-center h-screen bg-pink-200">
+                <div class="flex flex-col items-center justify-center h-screen bg-gray-300">
                     <h1 class="text-5xl font-bold text-gray-800">Experiences</h1>
                     <ul class="mt-4 text-3xl text-gray-600 max-w-4xl text-center">
                         <li>Took part in Robothon an event by Robotics and Aviation Club RBU</li>

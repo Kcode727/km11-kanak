@@ -1,9 +1,9 @@
 <?php
 
-use App\Http\Controllers\LanguageController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LanguageController;
 
-Route::post('/language-switch', LanguageController::class)->name('language.switch');
+Route::post('/switch-language', [LanguageController::class, 'switchLanguage'])->name('language.switch');
 
 Route::get('/', function () {
     return view('welcome');
@@ -16,5 +16,9 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
+
+Route::get('/projects', function () {
+    return view('projects');
+});
 
 Route::post('/contact/submit', [ContactController::class, 'submit'])->name('contact.submit');

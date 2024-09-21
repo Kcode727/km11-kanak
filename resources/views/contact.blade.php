@@ -2,12 +2,7 @@
     <x-slot:title>Contact</x-slot>
 
     <!-- Container with spiral overlay only -->
-    <div class="border-b-2 dark:border-white border-black relative min-h-screen bg-gradient-to-r from-blue-200 via-purple-300 to-pink-200 dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-700 dark:to-gray-900 py-20 flex items-center justify-center overflow-hidden">
-        
-        <!-- Wavy Spiral Background -->
-        <div class="absolute inset-0 z-0">
-            <div class="w-full h-full absolute top-0 left-0 bg-gradient-conic" style="background: conic-gradient(from 0deg at center, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(255, 255, 255, 0) 100%); transform: rotate(-45deg);"></div>
-        </div>
+    <div class="border-b-2 dark:border-white border-black relative bg-white dark:bg-black py-20 flex items-center justify-center overflow-hidden">
         
         <div class="max-w-4xl w-full px-8 lg:px-12 flex flex-col lg:flex-row items-center lg:space-x-12 relative z-10">
             

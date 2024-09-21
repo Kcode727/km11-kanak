@@ -1,3 +1,5 @@
+<?php
+
 namespace App\Http\Middleware;
 
 use Closure;
@@ -8,7 +10,8 @@ class SetLocale
 {
     public function handle($request, Closure $next)
     {
-        $locale = Session::get('locale', config('app.locale'));
+        // Check if a language is set in the session, default to 'en'
+        $locale = Session::get('locale', 'en');
         App::setLocale($locale);
 
         return $next($request);
